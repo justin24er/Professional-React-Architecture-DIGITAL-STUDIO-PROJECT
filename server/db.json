@@ -19,7 +19,7 @@
     "clientName": "Mwanga Health Clinic",
     "deadline": "2026-11-20",
     "progressPercentage": "90",
-    "projectStatus": "Almost Done"
+    "projectStatus": "Completed"
   },
   {
     "projectTitle": "Logistics Tracking Dashboard",
@@ -33,7 +33,7 @@
     "clientName": "Bright Future Academy",
     "deadline": "2027-02-14",
     "progressPercentage": "15",
-    "projectStatus": "Planning"
+    "projectStatus": "In Progress"
   },
   {
     "projectTitle": "Real Estate Listing Website",
@@ -47,14 +47,14 @@
     "clientName": "Duka Kuu Wholesalers",
     "deadline": "2026-12-01",
     "progressPercentage": "30",
-    "projectStatus": "On Hold"
+    "projectStatus": "Delayed"
   },
   {
     "projectTitle": "Restaurant Ordering App",
     "clientName": "Pilipili Kitchen",
     "deadline": "2027-03-10",
     "progressPercentage": "8",
-    "projectStatus": "Planning"
+    "projectStatus": "In Progress"
   }
     ]
 }

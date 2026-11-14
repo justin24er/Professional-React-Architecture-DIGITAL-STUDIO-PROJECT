@@ -6,7 +6,7 @@ function ProjectCard({
     clientName,
     deadline,
     progressPercentage,
-    projectStatus
+    projectStatus,
 }) {
     return (
         <article>

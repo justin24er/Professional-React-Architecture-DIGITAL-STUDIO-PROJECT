@@ -1,6 +1,7 @@
 {
     "projects": [
   {
+    "id": "1",
     "projectTitle": "E-Commerce Platform Redesign",
     "clientName": "Zuri Fashion House",
     "deadline": "2026-12-15",
@@ -8,6 +9,7 @@
     "projectStatus": "In Progress"
   },
   {
+    "id": "2",
     "projectTitle": "Mobile Banking App",
     "clientName": "Savanna Microfinance",
     "deadline": "2027-01-30",
@@ -15,6 +17,7 @@
     "projectStatus": "In Progress"
   },
   {
+    "id": "3",
     "projectTitle": "Hospital Appointment System",
     "clientName": "Mwanga Health Clinic",
     "deadline": "2026-11-20",
@@ -22,6 +25,7 @@
     "projectStatus": "Completed"
   },
   {
+    "id": "4",
     "projectTitle": "Logistics Tracking Dashboard",
     "clientName": "Kilimo Freight Ltd",
     "deadline": "2026-10-31",
@@ -29,6 +33,7 @@
     "projectStatus": "Completed"
   },
   {
+    "id": "5",
     "projectTitle": "Online Learning Portal",
     "clientName": "Bright Future Academy",
     "deadline": "2027-02-14",
@@ -36,20 +41,23 @@
     "projectStatus": "In Progress"
   },
   {
+    "id": "6",
     "projectTitle": "Real Estate Listing Website",
     "clientName": "Nyumba Properties",
     "deadline": "2026-11-05",
     "progressPercentage": "60",
-    "projectStatus": "Delayed"
+    "projectStatus": "On Hold"
   },
   {
+    "id": "8",
     "projectTitle": "Inventory Management System",
     "clientName": "Duka Kuu Wholesalers",
     "deadline": "2026-12-01",
     "progressPercentage": "30",
-    "projectStatus": "Delayed"
+    "projectStatus": "On Hold"
   },
   {
+    "id": "9",
     "projectTitle": "Restaurant Ordering App",
     "clientName": "Pilipili Kitchen",
     "deadline": "2027-03-10",

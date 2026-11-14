@@ -26,8 +26,9 @@ function ProjectList() {
         return projects.filter(proj => proj.projectTitle.toLowerCase() === 
                                     inputResults.search.toLowerCase().trim()||
                                     proj.clientName.toLowerCase() === 
-                                    inputResults.search.toLowerCase().trim())
-    },[projects,inputResults.search])
+                                    inputResults.search.toLowerCase().trim() ||
+                                    proj.projectStatus === inputResults.filter )
+    },[projects,inputResults.search,inputResults.filter])
 
     return (
         <section className="projects-sec">
@@ -53,7 +54,7 @@ function ProjectList() {
                         <selectedContent></selectedContent>
                     </Button>
                     <option value="" disabled></option>
-                    <option value="Active">Active</option>
+                    <option value="In Progress">Active</option>
                     <option value="On Hold">On Hold</option>
                     <option value="Completed">Completed</option>
                 </Select>

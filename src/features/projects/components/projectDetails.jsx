@@ -10,8 +10,8 @@ function ProjectDetails() {
 
     return   (
         <section className="project-view">
-            {projects.find(proj => proj.id === +id).map(proj => (
-                <div className="project-view-card">
+            {projects.filter(proj => proj.id === id).map(proj => (
+                <div key={id} className="project-view-card">
                     <StatusBadge status={proj.projectStatus} />
                     <h2>{proj.projectTitle}</h2>
                     <p><span>Client Name: </span><span>{proj.clientName}</span></p>

@@ -11,7 +11,7 @@ function UnknownPage() {
             <Button 
             className="return-home" 
             type="button"
-            onClick={() => navigate("/dashboard")}>return Home</Button>
+            onClick={() => navigate("/")}>return Home</Button>
         </section>
     )
 }

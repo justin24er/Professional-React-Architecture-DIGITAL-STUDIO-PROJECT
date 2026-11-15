@@ -8,11 +8,11 @@ function AppRoutes() {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="/dashboard" element={ProjectDashboard}>
-                    <Route index element={ProjectList}/>
-                    <Route path="product/:id" element={ProjectDetails} />
+                <Route path="/dashboard" element={<ProjectDashboard/>}>
+                    <Route index element={<ProjectList/>}/>
+                    <Route path="project/:id" element={<ProjectDetails/>} />
                 </Route>
-                <Route path="*" element={UnknownPage} />
+                <Route path="*" element={<UnknownPage/>} />
             </Routes>
         </BrowserRouter>
     )

@@ -67,6 +67,7 @@ function ProjectList() {
                         projects).map(proj => (
                         <ProjectCard
                         key={proj.id}
+                        id={proj.id}
                         projectTitle={proj.projectTitle} 
                         clientName={proj.clientName}
                         deadline={proj.deadline}

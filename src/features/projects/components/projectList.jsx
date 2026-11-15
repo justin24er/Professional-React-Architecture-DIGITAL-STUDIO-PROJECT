@@ -23,13 +23,17 @@ function ProjectList() {
     }
 
     const filteredProjects = useMemo(() => {
-        return projects.filter(proj => proj.projectTitle.toLowerCase() === 
-                                    inputResults.search.toLowerCase().trim()||
-                                    proj.clientName.toLowerCase() === 
-                                    inputResults.search.toLowerCase().trim() ||
-                                    proj.projectStatus === inputResults.filter )
-    },[projects,inputResults.search,inputResults.filter])
+        const q = inputResults.search.toLowerCase().trim()
+        const f = inputResults.filter
 
+        return projects.filter(proj => {
+            const searchResults = proj.projectTitle.toLowerCase().includes(q) || proj.clientName.toLowerCase().includes(q)
+            const filterResults = f === "" || f === "All" || proj.projectStatus === f 
+
+            return searchResults && filterResults
+        })
+    },[projects,inputResults.search,inputResults.filter])
+    
     return (
         <section className="projects-sec">
             <div className="projects-filter">
@@ -53,7 +57,8 @@ function ProjectList() {
                     <Button className="select-btn">
                         <selectedContent></selectedContent>
                     </Button>
-                    <option value="" disabled></option>
+                    <option value="" disabled>filter projects</option>
+                    <option value="All">All</option>
                     <option value="In Progress">Active</option>
                     <option value="On Hold">On Hold</option>
                     <option value="Completed">Completed</option>
@@ -62,9 +67,8 @@ function ProjectList() {
             <div className="projects-wrapper">
                 {loading ? <div className="loader">loading...</div>
                 : (error ? <div className="error">{error}</div>
-                    : (filteredProjects.length > 0 ?
-                        filteredProjects :
-                        projects).map(proj => (
+                    : (filteredProjects.length === 0 ? <div className="pr-not-found">project not found!</div> 
+                        : filteredProjects.map(proj => (
                         <ProjectCard
                         key={proj.id}
                         id={proj.id}
@@ -73,7 +77,7 @@ function ProjectList() {
                         deadline={proj.deadline}
                         progressStatus={proj.projectStatus}
                          />
-                    ))
+                    )))
                 )}
             </div>
         </section>

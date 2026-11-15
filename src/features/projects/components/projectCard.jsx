@@ -18,9 +18,9 @@ function ProjectCard({
         <article
         onClick={() => navigate(`project/${id}`)}>
             <StatusBadge status={projectStatus} />
-            <div>project title: <p>{projectTitle}</p></div>
-            <div>client name: <p>{clientName}</p></div>
-            <div>deadline: <p>{deadline}</p></div>
+            <div>project title: <span>{projectTitle}</span></div>
+            <div>client name: <span>{clientName}</span></div>
+            <div>deadline: <span>{deadline}</span></div>
             <ProgressBar value={progressPercentage} />
         </article>
     )

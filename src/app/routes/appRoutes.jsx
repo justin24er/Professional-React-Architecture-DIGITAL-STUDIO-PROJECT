@@ -8,7 +8,7 @@ function AppRoutes() {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="/dashboard" element={<ProjectDashboard/>}>
+                <Route path="/" element={<ProjectDashboard/>}>
                     <Route index element={<ProjectList/>}/>
                     <Route path="project/:id" element={<ProjectDetails/>} />
                 </Route>

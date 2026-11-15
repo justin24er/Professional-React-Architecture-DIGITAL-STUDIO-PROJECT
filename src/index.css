@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --ff-primary: 'Inter';
+    --fs-400: 13px;
+    --fs-500: 1.1rem;
+    --fs-600: 1.5rem;
+
+    --fw-200: 200;
+    --fw-400: 400;
+    --fw-500: 500;
+    --fw-600: 600;
+    --fw-700: 700;
+}
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: var(--ff-primary);
+    min-height: 100dvh;
+}

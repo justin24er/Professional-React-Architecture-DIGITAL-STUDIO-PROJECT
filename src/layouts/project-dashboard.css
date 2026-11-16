@@ -12,6 +12,6 @@ header h1 {
 }
 .dashboard-card-wrapper {
     display: flex;
-    justify-content: space-between;
-    gap: 2rem;
+    justify-content: space-around;
+    width: 100%;
 }

@@ -29,6 +29,7 @@ function ProjectDashboard() {
                     className="dash-card onhold-card"/>
                 </div>
             </header>
+            
             <Outlet />
         </main>
     )

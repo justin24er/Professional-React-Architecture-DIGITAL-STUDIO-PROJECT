@@ -22,4 +22,5 @@
 body {
     font-family: var(--ff-primary);
     min-height: 100dvh;
+    background: #f3f3f3;
 }

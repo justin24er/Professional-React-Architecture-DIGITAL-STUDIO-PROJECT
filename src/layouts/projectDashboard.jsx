@@ -1,6 +1,7 @@
 import useProjects from '../features/projects/hooks/useProjects'
 import DashboardCard from '../shared/components/dashboardCard'
 import {Outlet} from 'react-router-dom'
+import './project-dashboard.css'
 
 function ProjectDashboard() {
     const {projects} = useProjects();

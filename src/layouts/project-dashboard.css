@@ -10,3 +10,8 @@ main header {
 header h1 {
     align-self: flex-start;
 }
+.dashboard-card-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}

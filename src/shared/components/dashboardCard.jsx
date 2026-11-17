@@ -6,7 +6,7 @@ export default function DashboardCard({
     className
 }) {
     return (<div className={className}>
-        <h3>{title}</h3>
+        <h4>{title}</h4>
         <p>{value}</p>
     </div>)
 }

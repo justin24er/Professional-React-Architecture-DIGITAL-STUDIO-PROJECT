@@ -11,12 +11,15 @@
     border-radius: 20px; 
 }
 .dash-card p {
-    font-size:  var(--fs-600);
-    font-weight: var(--fw-700)
+    font-size:  1.7rem;
+    font-weight: var(--fw-700);
 }
 .dash-card.total-card {
     border-color: #d3bf08;
     background: #e7db70;
+    & > h4 {
+        color: #d3bf08;
+    }
     & > p {
     -webkit-text-stroke: 1px #978802;
     }
@@ -25,6 +28,9 @@
 .dash-card.progress-card {
     border-color: #9e5d3f;
     background: #c57652;
+    & > h4 {
+        color: #9e5d3f;
+    }
     & > p {
     -webkit-text-stroke: 1px #804b33;
     }
@@ -33,6 +39,9 @@
 .dash-card.completed-card {
     border-color: #237a76;
     background: #5ea092;
+    & > h4 {
+        color: #237a76;
+    }
     & > p {
     -webkit-text-stroke: 1px #1b615d;
     }
@@ -41,6 +50,9 @@
 .dash-card.onhold-card {
     border-color: #9c3560;
     background: #bb4d7b;
+    & > h4 {
+        color: #9c3560;
+    }
     & > p {
     -webkit-text-stroke: 1px #68223f;
     }

@@ -17,24 +17,32 @@
 .dash-card.total-card {
     border-color: #d3bf08;
     background: #e7db70;
+    & > p {
     -webkit-text-stroke: 1px #978802;
+    }
     color: #f3f3f3;
 }
 .dash-card.progress-card {
     border-color: #9e5d3f;
     background: #c57652;
+    & > p {
     -webkit-text-stroke: 1px #804b33;
+    }
     color: #f3f3f3;
 }
 .dash-card.completed-card {
     border-color: #237a76;
     background: #5ea092;
+    & > p {
     -webkit-text-stroke: 1px #1b615d;
+    }
     color: #f3f3f3;
 }
 .dash-card.onhold-card {
     border-color: #9c3560;
     background: #bb4d7b;
+    & > p {
     -webkit-text-stroke: 1px #68223f;
+    }
     color: #f3f3f3;
 }

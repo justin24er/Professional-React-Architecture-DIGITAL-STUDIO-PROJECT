@@ -1,7 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 :root {
-    --ff-primary: 'Inter';
+    --ff-primary: 'Gill Sans MT',Calibri,sans-serif;
     --fs-400: 13px;
     --fs-500: 1.1rem;
     --fs-600: 1.5rem;

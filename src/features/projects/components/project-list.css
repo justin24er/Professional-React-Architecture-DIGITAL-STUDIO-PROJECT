@@ -12,4 +12,8 @@ section.projects-sec {
     display: flex;
     align-items: center;
 }
-.search-input > input {height: 100%}
+.search-input > input {
+    height: 100%;
+    width: 400px;
+    max-width: 90dvw;
+}

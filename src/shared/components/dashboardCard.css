@@ -18,7 +18,7 @@
     border-color: #d3bf08;
     background: #e7db70;
     & > h4 {
-        color: #d3bf08;
+        color: #9b8c06;
     }
     & > p {
     -webkit-text-stroke: 1px #978802;
@@ -29,7 +29,7 @@
     border-color: #9e5d3f;
     background: #c57652;
     & > h4 {
-        color: #9e5d3f;
+        color: #814d34;
     }
     & > p {
     -webkit-text-stroke: 1px #804b33;
@@ -40,7 +40,7 @@
     border-color: #237a76;
     background: #5ea092;
     & > h4 {
-        color: #237a76;
+        color: #206d69;
     }
     & > p {
     -webkit-text-stroke: 1px #1b615d;
@@ -51,7 +51,7 @@
     border-color: #9c3560;
     background: #bb4d7b;
     & > h4 {
-        color: #9c3560;
+        color: #832d51;
     }
     & > p {
     -webkit-text-stroke: 1px #68223f;

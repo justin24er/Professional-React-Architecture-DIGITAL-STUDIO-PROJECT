@@ -11,9 +11,13 @@ section.projects-sec {
 .search-input {
     display: flex;
     align-items: center;
+    gap: .5rem;
 }
+.search-input > .search-icon {color: #5a5959}
 .search-input > input {
     height: 100%;
     width: 400px;
     max-width: 90dvw;
+    border: none;
+    background: #f3f3f3;
 }

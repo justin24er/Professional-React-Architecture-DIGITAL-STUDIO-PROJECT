@@ -1,0 +1,15 @@
+section.projects-sec {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.projects-filter {
+    display: flex;
+    gap: 1rem;
+    height: 2rem
+}
+.search-input {
+    display: flex;
+    align-items: center;
+}
+.search-input > input {height: 100%}

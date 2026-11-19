@@ -30,7 +30,7 @@ function ProjectCard({
             <div>project title: <span>{projectTitle}</span></div>
             <div>client name: <span>{clientName}</span></div>
             <div>deadline: <span>{deadline}</span></div>
-            <ProgressBar value={progressPercentage} />
+            <ProgressBar color={getBgColor()} value={progressPercentage} />
         </article>
     )
 }

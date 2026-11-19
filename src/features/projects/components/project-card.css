@@ -6,6 +6,7 @@ article {
     gap: .3rem;
     border-radius: 15px;
     transition: .4s;
+    position: relative;
 }
 article > div > span {
     font-style: italic;

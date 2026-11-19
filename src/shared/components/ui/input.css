@@ -1,0 +1,18 @@
+.search-input {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    border: 1px solid var(--clr-border);
+    padding-inline: .5rem;
+    border-radius: 50vw;
+    overflow: hidden;
+}
+.search-input > .search-icon {color: var(--clr-icon); cursor: pointer}
+.search-input > input {
+    height: 100%;
+    width: 400px;
+    max-width: 90dvw;
+    border: none;
+    background: transparent;
+    outline: none;
+}

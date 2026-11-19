@@ -55,6 +55,7 @@ function ProjectList() {
                 value={inputResults.filter}
                 onChange={handleChange}>
                     <Button className="select-btn">
+                        <i className="fa-solid fa-filter"></i>
                         <selectedContent></selectedContent>
                     </Button>
                     <option value="" disabled>filter projects</option>

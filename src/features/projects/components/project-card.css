@@ -1,0 +1,15 @@
+article {
+    border: 1px solid var(--clr-border);
+    padding: .8rem; 
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+    border-radius: 15px;
+    transition: .4s;
+}
+article > div > span {
+    font-style: italic;
+}
+article:hover {
+    background: #f0e7e7;
+}

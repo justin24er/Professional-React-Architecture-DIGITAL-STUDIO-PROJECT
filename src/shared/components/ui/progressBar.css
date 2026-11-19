@@ -1,3 +1,52 @@
+@property --num {
+    syntax: "<integer>";
+    inherits: false;
+    initial-value: 0
+}
+.progress {
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+    position: relative;
+}
 .progress-bar {
-    
+    width: 90%;
+    height: .5rem;
+    position: relative;
+    border: 1px solid var(--clr-border);
+    border-radius: 50vw;
+    overflow: hidden;
+}
+.progress-bar::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    background: var(--clr);
+    left: 0;
+    top: 0;
+    width: 0%;
+    animation: fillIn 1s 1 ease-in forwards;
+    border-radius: 0 50vw 50vw 0;
+}
+.progress-count {
+    counter-reset: n var(--num);
+    position: relative;
+    width: 20px;
+    aspect-ratio: 1;
+    animation: countDown 1s 1 ease-in forwards;
+}
+.progress-count::before {
+    position: absolute;
+    content: counter(n) "%";
+    font-size: 13px;
+}
+@keyframes countDown {
+    to {
+        --num: var(--progress) 
+    }
+}
+@keyframes fillIn {
+    to {
+        width: var(--progress)
+    }
 }

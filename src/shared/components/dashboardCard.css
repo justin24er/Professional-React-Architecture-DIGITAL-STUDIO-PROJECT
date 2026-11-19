@@ -1,7 +1,5 @@
 .dash-card {
-    width: 200px;
-    max-width: 200px;
-    height: 80px;
+    height: 100px;
     display: flex;
     flex-direction: column;
     gap: .8rem;
@@ -16,7 +14,7 @@
 }
 .dash-card.total-card {
     border-color: #d3bf08;
-    background: #e7db70;
+    background: var(--clr-total-card);
     & > h4 {
         color: #9b8c06;
     }
@@ -27,7 +25,7 @@
 }
 .dash-card.progress-card {
     border-color: #9e5d3f;
-    background: #c57652;
+    background: var(--clr-progress-card);
     & > h4 {
         color: #814d34;
     }
@@ -38,7 +36,7 @@
 }
 .dash-card.completed-card {
     border-color: #237a76;
-    background: #5ea092;
+    background: var(--clr-completed-card);
     & > h4 {
         color: #206d69;
     }
@@ -49,7 +47,7 @@
 }
 .dash-card.onhold-card {
     border-color: #9c3560;
-    background: #bb4d7b;
+    background: var(--clr-onhold-card);
     & > h4 {
         color: #832d51;
     }

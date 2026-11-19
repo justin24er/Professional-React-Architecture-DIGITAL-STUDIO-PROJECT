@@ -1,0 +1,32 @@
+select {
+    padding-inline: 1rem;
+    background: transparent;
+    border: 1px solid var(--clr-border);
+    border-radius: 50vw;
+    outline: none;
+    appearance: base-select; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &::picker-icon{
+        display: none;
+    }
+    &::picker(select) {
+        appearance: base-select;
+        margin-block-start: 1rem;
+        padding-block: .5rem;
+        border: 1px solid var(--clr-border);
+        background: transparent; 
+        border-radius: 12px;
+    }
+    > button i {
+        color: var(--clr-icon)
+    }
+    ::checkmark {
+        content: "📌";
+    }
+    option {
+        padding: .2rem 1rem;
+    }
+}

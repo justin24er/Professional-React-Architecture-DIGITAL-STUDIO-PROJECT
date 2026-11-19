@@ -1,0 +1,9 @@
+.status-badge {
+    font-size: var(--fs-200);
+    background: var(--clr-badge);
+    font-weight: var(--fw-600);
+    padding: .1rem .5rem;
+    width: max-content;
+    border-radius: 50vw;
+    color: var(--clr-bg);
+}

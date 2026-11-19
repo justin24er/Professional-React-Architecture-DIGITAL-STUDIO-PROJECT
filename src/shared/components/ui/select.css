@@ -17,7 +17,7 @@ select {
         margin-block-start: 1rem;
         padding-block: .5rem;
         border: 1px solid var(--clr-border);
-        background: transparent; 
+        background: var(--clr-bg); 
         border-radius: 12px;
     }
     > button i {

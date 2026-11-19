@@ -76,7 +76,8 @@ function ProjectList() {
                         projectTitle={proj.projectTitle} 
                         clientName={proj.clientName}
                         deadline={proj.deadline}
-                        progressStatus={proj.projectStatus}
+                        projectStatus={proj.projectStatus}
+                        progressPercentage={proj.progressPercentage}
                          />
                     )))
                 )}

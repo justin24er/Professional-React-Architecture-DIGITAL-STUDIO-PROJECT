@@ -1,6 +1,7 @@
 
 :root {
     --ff-primary: 'Gill Sans MT',Calibri,sans-serif;
+    --fs-200: 12px;
     --fs-400: 13px;
     --fs-500: 1.1rem;
     --fs-600: 1.5rem;
@@ -11,6 +12,7 @@
     --fw-600: 600;
     --fw-700: 700;
 
+    --clr-bg: #f3f3f3;
     --clr-border: #a5a4a4;
     --clr-icon: #5a5959;
     --clr-total-card: #e7db70;
@@ -28,5 +30,5 @@
 body {
     font-family: var(--ff-primary);
     min-height: 100dvh;
-    background: #f3f3f3;
+    background: var(--clr-bg);
 }

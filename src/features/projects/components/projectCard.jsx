@@ -14,10 +14,19 @@ function ProjectCard({
 }) {
     const navigate = useNavigate()
 
+    const getBgColor = () =>  {
+        switch(projectStatus) {
+            case 'In Progress': return 'var(--clr-progress-card)'
+            case 'Completed': return 'var(--clr-completed-card)'
+            case 'On Hold': return 'var(--clr-onhold-card)'
+            default: return 'var(--clr-bg)'
+        }
+    }
+
     return (
         <article
         onClick={() => navigate(`project/${id}`)}>
-            <StatusBadge status={projectStatus} />
+            <StatusBadge color={getBgColor()} status={projectStatus} />
             <div>project title: <span>{projectTitle}</span></div>
             <div>client name: <span>{clientName}</span></div>
             <div>deadline: <span>{deadline}</span></div>

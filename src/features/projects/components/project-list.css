@@ -13,6 +13,6 @@ section.projects-sec {
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
     gap: .8rem;
     background: #fcfafa;
-    padding: 1.5rem;
+    padding: 1rem;
     border-radius: 30px;
 }

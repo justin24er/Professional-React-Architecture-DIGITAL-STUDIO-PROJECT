@@ -27,7 +27,7 @@ function ProjectCard({
         <article
         onClick={() => navigate(`project/${id}`)}>
             <StatusBadge color={getBgColor()} status={projectStatus} />
-            <div>project title: <span>{projectTitle}</span></div>
+            <div className="project-card-title">project title: <span title={projectTitle}>{projectTitle}</span></div>
             <div>client name: <span>{clientName}</span></div>
             <div>deadline: <span>{deadline}</span></div>
             <ProgressBar color={getBgColor()} value={progressPercentage} />

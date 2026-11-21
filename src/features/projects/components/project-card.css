@@ -4,7 +4,7 @@ article {
     display: flex;
     flex-direction: column;
     gap: .3rem;
-    border-radius: 15px;
+    border-radius: calc(30px - 1rem);
     transition: .4s;
     position: relative;
 }
@@ -13,4 +13,9 @@ article > div > span {
 }
 article:hover {
     background: #f7d9d9;
+}
+.project-card-title {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis
 }

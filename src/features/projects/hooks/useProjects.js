@@ -38,7 +38,7 @@ export default function useProjects() {
                 })
             }
             catch(err) {
-                if(!err.name === 'AbortError') {
+                if(err.name !== 'AbortError') {
                     dispatch({
                         type: 'FETCH_ERROR',
                         payload: err.message

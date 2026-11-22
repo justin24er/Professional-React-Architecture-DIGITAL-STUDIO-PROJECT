@@ -1,0 +1,44 @@
+import {initialDetails, reducer} from '../../features/projects/reducers/projectReducers'
+import {getProjects} from '../../features/projects/services/projectService'
+import ProjectsContext from '../contexts/ProjectsContext'
+import {useEffect,useReducer} from 'react'
+
+function ProjectsProvider({children}) {
+    const [projects, dispatch] = useReducer(reducer, initialDetails)
+
+    useEffect(() => {
+        const controller = new AbortController()
+
+        async function loadProjects() {
+            try {
+                const feedback = await getProjects(controller.signal)
+                dispatch({
+                    type: 'FETCH_SUCCESS',
+                    payload: feedback
+                })
+            }
+            catch(err) {
+                if(err.name !== 'AbortError') {
+                    dispatch({
+                        type: 'FETCH_ERROR',
+                        payload: err.message
+                    })
+                }
+            }
+        }
+        loadProjects()
+
+        return () => controller.abort()
+    },[])
+
+    return (
+        <ProjectsContext.Provider value={{
+            projects: projects.projects,
+            loading: projects.loading,
+            error: projects.error
+        }}>
+            {children}
+        </ProjectsContext.Provider>
+    )
+}
+export default ProjectsProvider

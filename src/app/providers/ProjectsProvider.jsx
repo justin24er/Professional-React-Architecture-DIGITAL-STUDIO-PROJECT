@@ -32,11 +32,7 @@ function ProjectsProvider({children}) {
     },[])
 
     return (
-        <ProjectsContext.Provider value={{
-            projects: projects.projects,
-            loading: projects.loading,
-            error: projects.error
-        }}>
+        <ProjectsContext.Provider value={{projects}}>
             {children}
         </ProjectsContext.Provider>
     )

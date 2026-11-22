@@ -67,7 +67,7 @@ function ProjectList() {
             </div>
             <div className="projects-wrapper">
                 {loading ? <div className="loader">loading...</div>
-                : (error ? <div className="error">{error}</div>
+                : (error ? <div style={{color: 'red'}} className="error">{error}</div>
                     : (filteredProjects.length === 0 ? <div className="pr-not-found">project not found!</div> 
                         : filteredProjects.map(proj => (
                         <ProjectCard

@@ -19,7 +19,7 @@ function ProjectDetails() {
 
     return   (
         <section className="project-view">
-            {projects.filter(proj => proj.id === id).map(proj => (
+            {projects.filter(proj => proj.id.toString() === id).map(proj => (
                 <div key={id} style={{"--border": getBgClr(proj.projectStatus)}} className="project-view-card">
                     <StatusBadge color={getBgClr(proj.projectStatus)} status={proj.projectStatus} />
                     <h2>{proj.projectTitle}</h2>

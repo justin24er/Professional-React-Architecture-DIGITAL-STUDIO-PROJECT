@@ -1,0 +1,5 @@
+button.return-home {
+    padding: .5rem 1rem;
+    font-family: inherit;
+    cursor: pointer;
+}

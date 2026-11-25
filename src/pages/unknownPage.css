@@ -6,3 +6,7 @@ section.invalid-page {
     min-height: 100dvh;
     gap: 3rem;    
 }
+.not-found-header:has(+ p + button.return-home:hover) {
+    color: var(--clr-completed-card);
+    transition: color ease-in-out .2s;
+}

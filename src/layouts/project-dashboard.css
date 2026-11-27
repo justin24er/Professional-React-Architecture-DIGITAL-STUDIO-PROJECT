@@ -19,3 +19,13 @@ header h1 {
 main > *:nth-child(2) {
     margin-top: 3rem;
 }
+footer {
+    display: flex;
+    height: 1.5rem;
+    align-items: flex-end;
+    justify-content: center;
+    & a {
+        text-decoration: none;
+        cursor: pointer;
+    }
+}

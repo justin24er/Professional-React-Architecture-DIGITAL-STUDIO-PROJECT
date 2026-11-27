@@ -30,6 +30,9 @@ function ProjectDashboard() {
                 </div>
             </header>
             <Outlet />
+            <footer>
+                &copy; {new Date().toLocaleDateString().split("/")[2]}. developed and maintained by &nbsp;<a href="https://github.com/justin24er">justin24er</a>
+            </footer>
         </main>
     )
 }

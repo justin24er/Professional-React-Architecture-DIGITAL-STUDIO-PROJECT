@@ -1,4 +1,4 @@
-import ProjectsContext from '../../../app/contexts/ProjectsContext.jsx'
+import ProjectsContext from '../../../app/contexts/projectsContext.jsx'
 import {useContext} from 'react'
 
 function useProjects() {

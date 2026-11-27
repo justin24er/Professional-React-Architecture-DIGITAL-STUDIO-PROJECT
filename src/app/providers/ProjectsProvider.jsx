@@ -1,7 +1,7 @@
 import {initialDetails, reducer} from '../../features/projects/reducers/projectReducers'
 import {getProjects} from '../../features/projects/services/projectService'
-import ProjectsContext from '../contexts/ProjectsContext'
 import {useEffect,useReducer} from 'react'
+import ProjectsContext from '../contexts/projectsContext'
 
 function ProjectsProvider({children}) {
     const [projects, dispatch] = useReducer(reducer, initialDetails)

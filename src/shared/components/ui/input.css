@@ -17,5 +17,5 @@
     outline: none;
 }
 .search-input:focus-within {
-    box-shadow:inset 0 0 10px #666565
+    box-shadow:inset 0 0 10px var(--inset-box-shadow)
 }

@@ -22,6 +22,8 @@ header h1 {
 }
 main > *:nth-child(2) {
     margin-top: 3rem;
+    position: relative;
+    bottom: 0px;
 }
 footer {
     display: flex;
